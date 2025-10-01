@@ -1,13 +1,13 @@
 from sympy import *
 k, T, C, L = symbols('k T C L')
 #1 способ
-C_ost = 15000 # поменял правильно молодец
+C_ost = 10000 # поменял правильно молодец
 Am_lst = []
 C_ost_lst = []
 for i in range(8):
   Am = (C-L)/T
-  C_ost -=Am.subs({C:15000, T:8, L:0}) # поменял правильно молодец
-  Am_lst.append(round(Am.subs({C:15000, T:8, L:0}),2)) # поменял правильно молодец
+  C_ost -=Am.subs({C:10000, T:8, L:0}) # поменял правильно молодец
+  Am_lst.append(round(Am.subs({C:10000, T:8, L:0}),2)) # поменял правильно молодец
   C_ost_lst.append(round(C_ost,2))
 print("Am_lst:" , Am_lst) #Что это означает? # выводит список значений амортизации #Оценка:5
 print("C_ost_lst:" , C_ost_lst)
